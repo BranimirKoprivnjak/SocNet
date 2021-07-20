@@ -1,0 +1,50 @@
+{% extends 'core.html' %}
+
+  {% block title %}Login{% endblock %}
+
+  {% block content %}
+    <div class="onmSW sRz6i">
+      <div class="NWmCi iw3Mc">
+        <h1 class="JmnD9">SocNet</h1>
+        <form method="POST">
+          {% csrf_token %}
+          <div class="qEdmP">
+            {% for field in form %}
+            <div class="-MzZI">
+              {{ field }}
+              <span class="Xvkkr">{{ field.label }}</span>
+            </div>
+            {% endfor %}
+            {% if form.errors %}
+              <!-- form.errors is type dict, error_messages in forms.py -->
+              {% for error in form.errors.values %}
+                {{ error|escape }}
+              {% endfor %}
+            {% endif %}
+            {{ form.password.errors }}
+            <div class="GeQQM">
+              <button class="PzHaF" type="submit" name="button">
+                Application
+              </button>
+            </div>
+            <div class="KcqW8">
+              <p><strong>OR</strong></p>
+            </div>
+            <div class="ypNWu">
+              <a class="D5FE7 YnqtJ" href="#">
+                <span class="fa fa-facebook-official r5QRp" aria-hidden="true"></span>
+                Log in with Facebook
+               </a>
+            </div>
+            <div class="BLEdl">
+              <a href="{% url 'users:password_reset' %}" class="hy3nx YnqtJ">Forgot your password?</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="ZLIPf iw3Mc">
+        <p class="L0AFS">Don't have an account?</p>
+        <a class="hgNqZ YnqtJ L0AFS JaDQ4" href="{% url 'users:signup' %}"><strong>Register</strong></a>
+      </div>
+    </div>
+  {% endblock %}

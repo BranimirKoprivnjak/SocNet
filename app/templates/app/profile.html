@@ -1,0 +1,93 @@
+{% extends 'core.html' %}
+  {% load static %}
+
+  {% block title %}{% endblock %}
+
+  {% block content %}
+    <nav class="EEBPd">
+      <div class="hL8jp c5a4s">
+        <div class="FQU4C c5a4s">
+          <div class="V0vg9 c5a4s">
+            <a class="c3wFo YnqtJ" href="#"><strong>SocNet</strong></a>
+          </div>
+        </div>
+        <div class="ar7Tx">
+          <input class="qMjNz" type="text" placeholder="Search">
+        </div>
+        <div class="V16dw c5a4s">
+          <div class="VAG1m c5a4s">
+            <a href="#">
+              <img class="" src="{% static 'social/images/profile.jpg' %}"
+                    alt="Profile image {{ user.identifier }}">
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="uUFdO">
+      <div class="c5V0J c5a4s Ln7EH">
+        <div class="rbanP c5a4s">
+          <div class="RGiKu">
+            <img class="k099l" src="{{ account.profile_pic.url }}" alt="profile picture">
+          </div>
+        </div>
+        <div class="wdyyU c5a4s">
+          <div class="VNUTm c5a4s">
+            <h2 class="raJOq">{{ account.identifier }}</h2>
+            <div class="IxGjh">
+              <a class="PzHaF YnqtJ ggUyy" href="{% url 'app:follow' identifier=account.identifier %}">Follow</a>
+            </div>
+              <div class="oW9wD">
+                <a class="YnqtJ pmgLx" href="#">Message</a>
+              </div>
+              <div class="oW9wD">
+                <a class="YnqtJ pmgLx" href="{% url 'app:unfollow' identifier=account.identifier %}">Unfollow</a>
+              </div>
+          </div>
+          <ul class="qLTob c5a4s">
+            <li class="">
+              <span class="QnOkT">Number of posts: </span>
+              <span class="ZPVqy">{{ object_list.0.count }}</span>
+            </li>
+            <li class="">
+              <span class="QnOkT">Followers: </span>
+              <span class="ZPVqy">{{ object_list.1.count }}</span>
+            </li>
+          </ul>
+          <div class="dVdDx">
+            <p class="ZPVqy">{{ account.name }}</p>
+          </div>
+          <div class="QnOkT">
+            <p class="kSuWz">{{ account.profile_info }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="ZssUn c5a4s">
+        <a class="c5a4s YnqtJ lX8zX" href="#">
+          <span class="c5a4s Noeyd">
+            <svg aria-label="" class="_8-yf5 " fill="#262626" height="12" role="img" viewBox="0 0 48 48" width="12">
+              <path clip-rule="evenodd" d="M45 1.5H3c-.8 0-1.5.7-1.5 1.5v42c0 .8.7 1.5 1.5 1.5h42c.8 0 1.5-.7 1.5-1.5V3c0-.8-.7-1.5-1.5-1.5zm-40.5 3h11v11h-11v-11zm0 14h11v11h-11v-11zm11 25h-11v-11h11v11zm14 0h-11v-11h11v11zm0-14h-11v-11h11v11zm0-14h-11v-11h11v11zm14 28h-11v-11h11v11zm0-14h-11v-11h11v11zm0-14h-11v-11h11v11z" fill-rule="evenodd">
+              <p class="qbVj4">POSTS</p>
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div class="cCjYv c5a4s">
+        {% for post in object_list.0 %}
+          <img src="{{ post.picture.url }}" alt="profile picture">
+        {% endfor %}
+      </div>
+    </div>
+  {% endblock %}
+
+<!--
+  ykgXW
+  cNRUu
+  Noeyd
+  LHu44
+  CjoO0
+  a21ma
+{% for post in profile.0 %}
+  <p>{{ post.description }}</p>
+{% endfor %}
+ -->

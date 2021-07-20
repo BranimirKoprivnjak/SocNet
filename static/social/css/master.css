@@ -1,0 +1,475 @@
+html, body{
+  height: 100%;
+}
+
+body, h1, h2, h4, p, ul, li{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgba(250, 250, 250, 1);
+  font-family: 'Montserrat', sans-serif;
+}
+/* login */
+/* main container */
+.onmSW{
+  margin: 100px auto;
+  max-width: 350px;
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+.sRz6i{
+  max-width: 350px;
+}
+
+.r5EXM{
+  max-width: 388px;
+}
+
+/* border style on divs */
+.iw3Mc{
+  border:1px solid rgba(219, 219, 219, 1);
+}
+
+/* first div */
+.NWmCi{
+  margin: 0 0 10px;
+  padding: 10px 0 15px 0;
+}
+
+/* div pass reset form */
+.ZiF5V{
+  margin: 0 0 10px;
+  padding: 10px 0 0 0;
+}
+
+/* second div */
+.ZLIPf{
+  padding: 10px 0;
+  font-size: 13px;
+}
+
+/* h1 */
+.JmnD9{
+  margin: 22px auto 12px;
+  font-size: 42px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.YnqtJ{
+  text-decoration: none;
+}
+
+.L0AFS{
+  display:inline-block;
+  margin: 12px 0 12px 0;
+}
+
+/* Don't have an account? */
+.JaDQ4{
+  color: rgba(24, 149, 246, 1);
+}
+
+/* input div */
+.-MzZI{
+  position: relative;
+  margin: 0 40px 6px;
+}
+
+/* Forgot your password? */
+.hy3nx{
+  font-size: 11px;
+  color: rgba(0, 55, 107, 1);
+}
+
+/* form div */
+.qEdmP{
+  margin-top: 40px;
+}
+
+/* input */
+.wjQ2q{
+  width: 95%;
+  padding: 17px 0 2px 8px;
+  border: 0;
+  background-color: rgba(250, 250, 250, 1);
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 3px;
+}
+
+/* label span */
+.Xvkkr{
+  position: absolute;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  font-size: 11px;
+  color: rgba(142, 142, 142, 1);
+  left: 10px;
+  line-height: 36px;
+}
+
+.-MzZI input:focus ~ .Xvkkr,
+.-MzZI input:not(:focus):valid ~ .Xvkkr{
+  left: 10px;
+  bottom:7px;
+  font-size: 9px;
+  opacity: 1;
+}
+
+/* button div */
+.GeQQM{
+  margin: 15px 40px 15px 40px;
+}
+
+/* button */
+.PzHaF{
+  width: 99%;
+  padding: 7px 9px;
+  cursor: pointer;
+  background-color: rgba(24, 149, 246, 1);
+  color:white;
+  border: none;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+/* OR */
+.KcqW8{
+  color: rgba(142, 142, 142, 1);
+  font-size: 13px;
+  margin: 10px 0 18px;
+}
+
+/* Log in with FB div */
+.ypNWu{
+  margin: 8px 40px 8px 40px;
+}
+
+/* Log in with FB a tag */
+.D5FE7{
+  text-decoration: none;
+  color: rgba(56, 81, 133, 1);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Forgot your password? div */
+.BLEdl{
+  margin-top: 16px;
+}
+
+/* errors */
+.bBQfN{
+  font-size: 11px;
+  color: red;
+}
+
+/* errors div */
+.S8wIM{
+  margin-top: 10px;
+}
+
+
+
+/*sign up*/
+
+/* h2 */
+.zeyKa{
+  color: rgba(142, 142, 142, 1);
+  font-size: 16px;
+  margin: 0 40px 10px;
+  font-weight: 600;
+}
+
+/* forms */
+.KwGlY{
+  margin-top: 10px;
+}
+
+/* recaptcha div */
+.qVJFl{
+  margin: 15px 40px 20px;
+}
+
+/* recaptcha */
+.khkjV{
+  transform:scale(0.88);
+  -webkit-transform:scale(0.88);
+  transform-origin:0 0;
+  -webkit-transform-origin:0 0;"
+}
+
+
+/*  reset password form */
+
+/* Problems signing in ? */
+.ny38G{
+  font-size: 14px;
+}
+
+.wMede{
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+
+/* text below */
+.gIXSw{
+  font-size: 12px;
+  color: rgba(142, 142, 142, 1);
+  font-weight: 400;
+}
+
+.Dcx7s{
+  font-size: 12px;
+  color: black;
+}
+
+.yrd2U{
+  height: 44px;
+  margin-top: 68px;
+}
+
+
+/* profile */
+
+/* main container */
+.uUFdO{
+  max-width: 935px;
+  margin: 0 auto 30px;
+  padding: 30px 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* profile pic */
+.k099l{
+  border-radius: 50%;
+  border: 6px solid transparent;
+  box-shadow: 0 0 0 2px rgba(219, 219, 219, 1);
+  width:150px;
+}
+
+.c5a4s{
+  display: flex;
+}
+
+.Ln7EH{
+  flex-shrink: 0;
+  margin-bottom: 44px;
+}
+
+.rbanP{
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.wdyyU{
+  flex-basis: 30px;
+  flex-grow: 2;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.VNUTm{
+  flex-direction: row;
+  flex-shrink: 1;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.RGiKu{
+  align-self: center;
+}
+
+/* follow div */
+
+.IxGjh{
+  margin-left: 20px;
+}
+
+/* h2 identifier */
+.raJOq{
+  font-size: 25px;
+  font-weight: 500;
+  color: rgba(83, 83, 83, 1)
+}
+
+/* nav div */
+.hL8jp{
+  max-width: 935px;
+  height: 54px;
+  padding: 0 20px;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.FQU4C{
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1 9999 0%;
+}
+
+.V16dw{
+  flex: 1 0 0%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.VAG1m{
+  flex-direction: row;
+  height: 25px;
+  width: 25px;
+}
+
+.EEBPd{
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  background: white;
+}
+
+/* Socnet */
+.c3wFo{
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  font-size: 26px;
+}
+
+/* search input div */
+.ar7Tx{
+
+}
+
+/* search input */
+.qMjNz{
+  height: 24px;
+  min-width: 125px;
+  width: 209px;
+  background-color: rgba(250, 250, 250, 1);
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 3px;
+}
+
+.V0vg9{
+  align-items: stretch;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+/* follow button */
+.ggUyy{
+  height: 100%;
+  font-size: 13px;
+  padding: 6px 16px 6px 16px;
+  cursor: pointer;
+  background-color: rgba(24, 149, 246, 1);
+  color:white;
+  border: none;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.haYBO{
+  flex-direction: row;
+  flex-shrink: 1;
+  align-items: center;
+}
+
+/* Message div */
+.oW9wD{
+  margin-left: 8px;
+}
+
+/* Message button */
+.pmgLx{
+  font-size: 13px;
+  color: black;
+  padding: 6px 16px 6px 16px;
+  cursor: pointer;
+  border: 1px solid rgba(219, 219, 219, 1);
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+/* Unfollow button */
+.jND2u{
+  padding: 6px 16px 6px 16px;
+  cursor: pointer;
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 3px;
+}
+
+.qLTob{
+  margin-bottom: 20px;
+  flex-direction: row
+}
+
+.qLTob li{
+  list-style-type: none;
+  margin-right: 40px;
+  font-size: 15px;
+}
+
+/* followers/posts numbers */
+.ZPVqy{
+  font-weight: 600;
+}
+
+/* text next to numbers */
+.QnOkT{
+  color: rgba(83, 83, 83, 1);
+  font-weight: 500;
+  margin-right: 2px;
+}
+
+/* real name div */
+.dVdDx{
+  margin-bottom: 5px;
+}
+
+/* line */
+.MDmDb{
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+}
+
+/* description */
+.kSuWz{
+  font-size: 13px;
+}
+
+/* posts div */
+.cCjYv{
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cCjYv img{
+  width: 293px;
+}
+
+.ZssUn{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-top: 1px solid rgba(219, 219, 219, 1);
+  height: 53px;
+}
+
+/* posts svg */
+.Noeyd{
+  align-items: center;
+}
+
+.qbVj4{
+  margin-left: 6px;
+}
+
+.lX8zX{
+  font-size: 13px;
+  color: rgba(83, 83, 83, 1);
+  font-weight: 600;
+}

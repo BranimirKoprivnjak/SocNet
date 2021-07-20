@@ -1,0 +1,24 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: TestSite password reset
+From: webmaster@localhost
+To: koprivnjak965@gmail.com
+Date: Thu, 08 Jul 2021 14:57:58 -0000
+Message-ID: 
+ <162575627809.12752.16926175077573434374@DESKTOP-R29260M.Speedport_W_724V_09091602_00_011>
+
+
+To initiate the password reset process for your Branimir TestSite Account,
+click the link below:
+
+http://127.0.0.1:8000/users/password/reset/Mw/aph8gm-94951f769786b5c3206f33ad483a45a8
+
+If clicking the link above doesn't work, please copy and paste the URL in a new browser
+window instead.
+
+Sincerely,
+The TestSite Team
+
+
+-------------------------------------------------------------------------------

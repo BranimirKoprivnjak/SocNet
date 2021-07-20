@@ -1,0 +1,18 @@
+{% extends 'core.html' %}
+
+  {% block title %}{{ post.user.identifier }}{% endblock %}
+
+  {% block content %}
+    <p>{{ post.user.identifier }}</p>
+    <img src="{{ post.user.profile_pic.url }}" alt="">
+    <img src="{{ post.picture.url }}" alt="">
+    <p>{{ post.description }}</p>
+    <p>{{ post.created_at }}</p>
+    <h3>Likes</h3>
+    <p>{{ post.likes.user.identifier }}</p>
+    <p>{{ post.likes.count }}</p>
+    <h3>Comments</h3>
+    <p>{{ post.comments.user.identifier }}</p>
+    <p>{{ post.comments.text}}</p>
+    <p>{{ post.comments.likes.user.identifier }}</p>
+  {% endblock %}

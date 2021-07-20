@@ -1,0 +1,83 @@
+{% extends 'core.html' %}
+
+  {% block title %}Sign up{% endblock %}
+
+  {% block content %}
+    <div class="onmSW sRz6i">
+      <div class="NWmCi iw3Mc">
+        <h1 class="JmnD9">SocNet</h1>
+        <form method="post" data-validate-identifier-url="{% url 'users:validate_identifier' %}">
+          {% csrf_token %}
+          <h2 class="zeyKa">Register to see your friends' photos and videos.</h2>
+          <div class="ypNWu">
+            <a class="D5FE7 YnqtJ" href="#">
+              <span class="fa fa-facebook-official r5QRp" aria-hidden="true"></span>
+              Log in with Facebook
+             </a>
+          </div>
+          <div class="KcqW8">
+            <p><strong>OR</strong></p>
+          </div>
+            <div class="KwGlY">
+              {% for field in form %}
+              <div class="-MzZI">
+                {{ field }}
+                <span class="Xvkkr">{{ field.label }}</span>
+              </div>
+              {% endfor %}
+            </div>
+          <div class="qVJFl">
+            <div class="g-recaptcha khkjV" data-sitekey="6LcqeYMbAAAAAKxqkE1EWOZRZ46Huy3uXjTDLSpQ"></div>
+          </div>
+          {% if form.errors %}
+            <!-- form.errors is type dict, error_messages in forms.py -->
+            {% for error in form.errors.values %}
+              {{ error|escape }}
+            {% endfor %}
+          {% endif %}
+          {{ form.password.errors }}
+          {% if messages %}
+            {% for message in messages %}
+              <div class="S8wIM">
+                <div class="bBQfN">
+                  {{ message }}
+                </div>
+              </div>
+            {% endfor %}
+          {% endif %}
+          <div class="GeQQM">
+            <button class="PzHaF" type="submit" name="button">
+              Application
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="ZLIPf iw3Mc">
+        <p class="L0AFS">Do you have an account?</p>
+        <a class="hgNqZ YnqtJ L0AFS JaDQ4" href="{% url 'users:login' %}"><strong>Application</strong></a>
+      </div>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js?hl=en" async defer></script>
+    <script>
+      $('.wjQ2q').change(function(){
+        var form = $(this).closest('form');
+        $.ajax({
+          url: form.attr('data-validate-identifier-url'),
+          data: form.serialize(),
+          dataType: 'json',
+          success: function (data){
+            if (data.is_taken){
+              $(this).css('border', '1px solid red');
+            }
+          }
+        });
+      });
+    </script>
+  {% endblock %}
+
+
+<!--
+Z9Vv9
+ny38G
+OhudU
+-->
