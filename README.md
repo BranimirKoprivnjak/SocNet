@@ -1,6 +1,6 @@
 # Introduction
 
-Instagram-clone type of application with main focus on authentification and authorization.
+Instagram-clone type of application with main focus on authentication and authorization.
 
 ### Technology used
 Django&Python
